@@ -90,6 +90,8 @@ section {
 
 .navbar-toggler {
   font-size: 40px;
+  margin-right: 20px;
+
 }
 
 .navbar-toggler:focus { outline: none; }
@@ -104,7 +106,7 @@ section {
 }
 .content-center {
   max-width: 800px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   color:#f5f5f5
 }
@@ -171,6 +173,14 @@ section {
 .carrousel {
   padding: 20px;
 }
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
 
 
 /**Ofertas**/
@@ -184,16 +194,13 @@ section {
   width: 100%;
   height: 50%; }
 
-.row .hombres {
+.hombres {
   width: 200px;
   height: 250px;
   margin: 10px;
   
 }
-.row .infantil {
-  width: 200px;
-  height: 250px;
-  margin: 10px; }
+
 
 /** footer**/
 
@@ -221,13 +228,14 @@ ion-icon {
 .preheader {
   background: rgb(248, 73, 190);
   width: 100%;
-  height: 30px;
+  height: auto;
   text-align: center;
+  
 }
 
 .preheader p {
   padding: 3px;
-  font-size: 18px;
+  font-size: 1.5em;
   
 }
 
@@ -255,6 +263,7 @@ ion-icon {
   margin: 10px 10px 10px 25px;
   padding: 2px;
 }
+
 
 .container .row .block{
  margin-left: auto;
@@ -365,12 +374,18 @@ text {
 
 .container-inner{
   margin-top: 130px;
+
 }
 .container-inner .row {
 padding: 2px;
 }
+
 .inner {
   overflow: hidden;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  margin: 2px
 }
 .inner img{
   transition: all 1.5s ease;
@@ -378,6 +393,7 @@ padding: 2px;
 .inner img:hover{
   transform:scale(1.3);
 }
+
 /*contacto*/
 
 .contenedor-body{
@@ -538,14 +554,22 @@ input[type="password"]{
   h1 {font-size:40px; line-height: normal;}
   .portfolio-details h2 {font-size: 32px;}
   .preheader {
-    font-size: small;
+    font-size: small;}
   }
 }
-
-@media (min-width: 768px) { ... }
 
 @media (min-width: 992px) { ... }
 
 
-@media (min-width: 1200px) { ... }
+@media (max-width: 1200px) {
+  .box {
+    width: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  .box {
+    width: 90%;
+  }
+}
 
