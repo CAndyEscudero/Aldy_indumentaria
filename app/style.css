@@ -249,7 +249,7 @@ ion-icon {
 }
 
 .precatalogo .catalogo__index {
-  margin-left: 100px;
+  justify-content: center;
   margin-top: 50px;
   
 }
